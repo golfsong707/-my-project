@@ -1,248 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anungar Godfrey John | Data Analyst Portfolio</title>
+
+<style>
+
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:#e2e8f0;
+  line-height:1.6;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h1,h2,h3{
+  margin-bottom:15px;
+}
+
+a{
+  text-decoration:none;
+  color:#38bdf8;
+  transition:.3s ease;
+}
+
+a:hover{
+  color:#0ea5e9;
+}
+
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#0b1220;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav a{
+  color:#e2e8f0;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  flex-wrap:wrap;
+  text-align:left;
+}
+
+.hero img{
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #38bdf8;
+  box-shadow:0 0 25px rgba(56,189,248,.3);
+}
+
+.hero-text h1{
+  font-size:2.5rem;
+  background:linear-gradient(90deg,#38bdf8,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.cta{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#38bdf8;
+  color:#0f172a;
+  font-weight:600;
+  border-radius:6px;
+}
+
+.cta:hover{
+  box-shadow:0 0 20px #38bdf8;
+}
+
+/* ============================= */
+/* GRID CARDS */
+/* ============================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.05);
+  transition:.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 20px rgba(56,189,248,.15);
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+  font-size:2rem;
+}
+
+.section-title span{
+  color:#38bdf8;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer{
+  background:#0b1220;
+  text-align:center;
+  padding:40px 10%;
+  margin-top:60px;
+}
+
+footer p{
+  color:#94a3b8;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media(max-width:768px){
+  .hero{
+    text-align:center;
+  }
+}
+
+</style>
 </head>
 
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>S</span>haif <span>A</span>rfan</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
 
+<!-- NAV -->
+<nav>
+  <h2>Anungar Godfrey John</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#focus">Focus</a></li>
+    <li><a href="#case">Case Studies</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Arfan <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+<!-- HERO -->
+<section class="hero">
+  <img src="profile.jpg" alt="Profile Picture">
+  <div class="hero-text">
+    <h1>Data Analyst | Data Engineer | Data Scientist</h1>
+    <p>
+      Turning data into structured insight and strategic advantage.
+      I build transparent, reproducible, and business-focused analytical systems.
+    </p>
+    <a href="#projects" class="cta">View Portfolio</a>
+  </div>
+</section>
 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
-          magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
-          voluptatum explicabo!</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About <span>Me</span></h2>
+  <p>
+    I am a data professional with a background in engineering systems, analytics and modeling.
+    My work focuses on transforming operational, financial, and business data into
+    structured insights that improve decision quality and reduce uncertainty.
+  </p>
+</section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-      </div>
+<!-- ANALYTICAL FOCUS -->
+<section id="focus">
+  <h2 class="section-title">Analytical <span>Focus</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Business Intelligence</h3>
+      <p>Executive dashboards, KPI tracking, structured reporting systems.</p>
     </div>
-  </section>
-  <!-- End Projects Section -->
+    <div class="card">
+      <h3>Financial Analytics</h3>
+      <p>Market analysis, valuation metrics, trend forecasting models.</p>
+    </div>
+    <div class="card">
+      <h3>Operations Analytics</h3>
+      <p>Workflow optimization and bottleneck detection.</p>
+    </div>
+    <div class="card">
+      <h3>Predictive Modeling</h3>
+      <p>Automation pipelines and reproducible decision systems.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
+<!-- CASE STUDIES -->
+<section id="case">
+  <h2 class="section-title">Featured <span>Case Studies</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Sales Performance Dashboard</h3>
+      <p><strong>Problem:</strong> Limited visibility into revenue drivers.</p>
+      <p><strong>Approach:</strong> SQL data modeling + Python cleaning + Power BI dashboards.</p>
+      <p><strong>Impact:</strong> Improved reporting speed by 60%.</p>
     </div>
-  </section>
-  <!-- End About Section -->
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
-          </div>
-        </div>
-      </div>
+    <div class="card">
+      <h3>Financial Market Trend Analysis</h3>
+      <p><strong>Problem:</strong> Unstructured investment interpretation.</p>
+      <p><strong>Approach:</strong> Time-series analysis using pandas & visualization.</p>
+      <p><strong>Impact:</strong> Structured decision-making framework.</p>
     </div>
-  </section>
-  <!-- End Contact Section -->
+  </div>
+</section>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>S</span>haif <span>A</span>rfan</h1>
-      </div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
-        </div>
-      </div>
-      <p>Copyright © 2020 Arfan. All rights reserved</p>
+<!-- PROJECT GALLERY -->
+<section id="projects">
+  <h2 class="section-title">Project <span>Gallery</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>SQL Customer Segmentation</h3>
+      <p>Advanced segmentation queries and retention analytics.</p>
+      <a href="https://github.com/yourusername/sql-project" target="_blank">View on GitHub</a>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+
+    <div class="card">
+      <h3>Power BI Executive Dashboard</h3>
+      <p>Interactive KPI tracking dashboard.</p>
+      <a href="https://github.com/yourusername/powerbi-project" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Financial Data Exploration</h3>
+      <p>Exploratory time-series financial analysis in Python.</p>
+      <a href="https://github.com/yourusername/python-finance" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact <span>Me</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Email</h3>
+      <p>anungar@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h3>LinkedIn</h3>
+      <p><a href="https://www.linkedin.com/in/aunungar/" target="_blank">linkedin.com/in/aunungar</a></p>
+    </div>
+
+    <div class="card">
+      <h3>GitHub</h3>
+      <p><a href="#">github.com/yourusername</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h3>Building Transparent & Decision-Focused Data Systems</h3>
+  <p>© 2026 Anungar Godfrey John</p>
+</footer>
+
 </body>
-
 </html>
